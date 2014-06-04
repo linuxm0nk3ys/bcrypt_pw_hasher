@@ -19,4 +19,4 @@ else:
 #       print "%s:%s" % (options.username,hashed)
         print("%s:%s" % (options.username,hashed))
     else:
-        print "Password doesn't match!"
+        print("Password doesn't match!")

@@ -16,6 +16,7 @@ else:
     verify = gp.getpass("Verify Password: ")
     if (password == verify):
         hashed = bcrypt.hashpw(password,bcrypt.gensalt(int(options.workfactor)))
-        print "%s:%s" % (options.username,hashed)
+#       print "%s:%s" % (options.username,hashed)
+        print("%s:%s" % (options.username,hashed))
     else:
         print "Password doesn't match!"
